@@ -1,5 +1,4 @@
 Name: Brennan Chan
-ID: 1219829962
 
 Generative AI Acknowledgment: Portions of the code in this project were generated with assistance from ChatGPT, an AI tool developed by OpenAI. 
 Reference: OpenAI. (2024). ChatGPT [Large language model]. openai.com/chatgpt
