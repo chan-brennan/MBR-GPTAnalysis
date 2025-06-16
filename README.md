@@ -81,16 +81,16 @@ The script inspects the first 512 bytes to determine whether it's an MBR or GPT 
 
 If MBR:
 
-Reads up to 4 partition entries (16 bytes each)
+1. Reads up to 4 partition entries (16 bytes each)
 
-Classifies partition types using a hardcoded dictionary
+2. Classifies partition types using a hardcoded dictionary
 
-Optionally reads 16 boot-record bytes from given offsets
+3. Optionally reads 16 boot-record bytes from given offsets
 
 If GPT:
 
-Validates "EFI PART" signature
+1. Validates "EFI PART" signature
 
-Parses the GPT header for partition layout
+2. Parses the GPT header for partition layout
 
-Extracts and formats partition GUIDs, names, and LBAs
+3. Extracts and formats partition GUIDs, names, and LBAs
