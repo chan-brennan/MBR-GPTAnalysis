@@ -94,3 +94,36 @@ If GPT:
 2. Parses the GPT header for partition layout
 
 3. Extracts and formats partition GUIDs, names, and LBAs
+
+## 🧰 Supported Partition Types (MBR)
+A few commonly supported types:
+
+0x07 – HPFS/NTFS/exFAT
+
+0x06 – FAT16
+
+0x0B – FAT32
+
+0x83 – Linux
+
+0xEE – GPT Protective MBR
+
+Full list available in: PartitionTypes.csv or PartitionTypes.json.
+
+## 📦 Hash Output Files
+For each raw image, the following files will be generated:
+
+MD5-<filename>.txt
+
+SHA-256-<filename>.txt
+
+SHA-512-<filename>.txt
+
+These ensure the forensic integrity of the disk images prior to analysis.
+
+## ⚙️ Requirements
+Python 3.x
+
+No external libraries required
+
+Works on Linux, macOS, or Windows with Python
