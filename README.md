@@ -30,7 +30,7 @@ This project is a Python-based tool for analyzing Master Boot Record (MBR) and G
 ---
 
 ## 📂 Project Structure
-
+```
 ForensicDiskAnalyzer/
 ├── boot_info.py # Main script for MBR/GPT parsing and hashing
 ├── gpt_sample.raw # Sample GPT-based raw disk image
@@ -41,7 +41,7 @@ ForensicDiskAnalyzer/
 ├── PartitionTypes.json # JSON version of partition type codes
 ├── Makefile # Compilation helper (optional)
 └── README.md # This file
-
+```
 ---
 
 ## 🧪 Sample Usage
