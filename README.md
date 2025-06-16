@@ -52,6 +52,7 @@ ForensicDiskAnalyzer/
 python3 boot_info.py -f mbr_sample.raw -o 0 0 0 0
 ```
 -f: Path to the raw disk image file
+
 -o: List of byte offsets for reading the first 16 bytes of each partition’s boot record
 
 Output Example (MBR)
@@ -61,6 +62,7 @@ Partition number: 1
 16 bytes of boot record from offset 0: 45 52 52 4F 52 00 00 00 00 00 00 00 00 00 00 00
 ASCII: E R R O R . . . . . . . . .
 ```
+
 Output Example (GPT)
 ```
 Partition number: 1
