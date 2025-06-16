@@ -73,3 +73,24 @@ Starting LBA in Decimal: 34
 Ending LBA in Decimal: 497
 Partition name: EFI system partition
 ```
+
+🔄 Execution Model
+The raw image file is hashed using MD5, SHA-256, and SHA-512.
+
+The script inspects the first 512 bytes to determine whether it's an MBR or GPT disk.
+
+If MBR:
+
+Reads up to 4 partition entries (16 bytes each)
+
+Classifies partition types using a hardcoded dictionary
+
+Optionally reads 16 boot-record bytes from given offsets
+
+If GPT:
+
+Validates "EFI PART" signature
+
+Parses the GPT header for partition layout
+
+Extracts and formats partition GUIDs, names, and LBAs
