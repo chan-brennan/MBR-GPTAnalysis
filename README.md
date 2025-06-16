@@ -74,7 +74,7 @@ Ending LBA in Decimal: 497
 Partition name: EFI system partition
 ```
 
-# 🔄 Execution Model
+## 🔄 Execution Model
 The raw image file is hashed using MD5, SHA-256, and SHA-512.
 
 The script inspects the first 512 bytes to determine whether it's an MBR or GPT disk.
